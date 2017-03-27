@@ -239,7 +239,17 @@ footer{
 }
 
 @media screen and (max-width: 700px){
+	h1{
+		font-size: 1.5em;
+	}
 	dd i{
 		font-size: .8em !important;
+	}
+	body{
+		padding-left: 10px;
+		padding-right: 10px;
+	}
+	dl{
+		width: 100%;
 	}
 }
