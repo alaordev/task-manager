@@ -216,3 +216,30 @@ footer{
 	font-size: .65em;
 	padding: 5px;
 }
+
+@media screen and (max-width: 970px){
+	input,button#add_edit_task{
+		display: block;
+		width: 100%;
+	}
+	input{
+		margin-bottom: 2px;
+	}
+	button#add_edit_task{
+		margin-top: 0;
+		border-bottom-left-radius: 10px;
+		border-top-right-radius: 0;
+	}
+	dt{
+		width: 80%;
+	}
+	dd{
+		width: 20%;
+	}
+}
+
+@media screen and (max-width: 700px){
+	dd i{
+		font-size: .8em !important;
+	}
+}
