@@ -1,6 +1,6 @@
 if ('serviceWorker' in navigator) {
 	alert('aqui');
-	navigator.serviceWorker.register('/sw-test/sw.js', {scope: '/sw-test/'})
+	navigator.serviceWorker.register('/sw-scope/sw.js', {scope: '/sw-scope/'})
 	.then(function(reg) {
 		alert('s');
 	// registration worked
