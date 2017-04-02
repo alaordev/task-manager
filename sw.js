@@ -5,6 +5,8 @@ this.addEventListener('install', function(event) {
         '/alaorweb.github.io/',
         '/alaorweb.github.io/index.html',
         '/alaorweb.github.io/img/favicon/favicon.ico',
+        '/alaorweb.github.io/img/favicon/favicon-16x16.png',
+        '/alaorweb.github.io/img/favicon/favicon-32x32.png',
         '/alaorweb.github.io/fonts/open_sans/OpenSans-Regular.ttf',
         '/alaorweb.github.io/fonts/open_sans/OpenSans-Bold.ttf',
         '/alaorweb.github.io/css/styles.css',
