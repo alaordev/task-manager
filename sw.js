@@ -7,7 +7,7 @@ this.addEventListener('install', function(event) {
         '/alaorweb.github.io/img/favicon/favicon.ico',
         '/alaorweb.github.io/fonts/open_sans/OpenSans-Regular.ttf',
         '/alaorweb.github.io/fonts/open_sans/OpenSans-Bold.ttf',
-        '/alaorweb.github.io/css/style.css',
+        '/alaorweb.github.io/css/styles.css',
         '/alaorweb.github.io/js/vue.min.js',
         '/alaorweb.github.io/js/app.js'
       ]);
@@ -16,7 +16,7 @@ this.addEventListener('install', function(event) {
 });
 
 this.addEventListener('fetch', function(event) {
-  
+
   event.respondWith(
     caches.match(event.request).then(function(resp) {
       return resp || fetch(event.request).then(function(response) {
