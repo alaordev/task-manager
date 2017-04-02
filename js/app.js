@@ -1,7 +1,7 @@
 /* IMPORTANTATE: PRECISA SER HTTPS PARA O SW OPERAR */
 if ('serviceWorker' in navigator) {
 	alert('aqui');
-	navigator.serviceWorker.register('/sw.js', {scope: '/'})
+	navigator.serviceWorker.register('/alaorweb.github.io/sw.js', {scope: '/alaorweb.github.io/'})
 	.then(function(reg) {
 		alert('s');
 	// registration worked
