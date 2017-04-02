@@ -1,7 +1,7 @@
 /* IMPORTANTATE: PRECISA SER HTTPS PARA O SW OPERAR */
 if ('serviceWorker' in navigator) {
 	alert('aqui');
-	navigator.serviceWorker.register('/sw-scope/sw.js', {scope: '/sw-scope/'})
+	navigator.serviceWorker.register('/sw.js', {scope: '/'})
 	.then(function(reg) {
 		alert('s');
 	// registration worked
