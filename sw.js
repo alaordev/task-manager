@@ -16,8 +16,18 @@ this.addEventListener('install', function(event) {
 });
 
 this.addEventListener('fetch', function(event) {
+  
   event.respondWith(
-    //caches.match(event.request);
-    new Response('teste')
+    caches.match(event.request).then(function(resp) {
+      return resp || fetch(event.request).then(function(response) {
+        caches.open('v1').then(function(cache) {
+          cache.put(event.request, response.clone());
+        });
+        return response;
+      });
+    }).catch(function() {
+      //return caches.match('/sw-test/gallery/myLittleVader.jpg');
+    })
   );
+
 });

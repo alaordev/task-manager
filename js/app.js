@@ -1,13 +1,10 @@
 /* IMPORTANTATE: PRECISA SER HTTPS PARA O SW OPERAR */
 if ('serviceWorker' in navigator) {
-	alert('aqui');
 	navigator.serviceWorker.register('/alaorweb.github.io/sw.js', {scope: '/alaorweb.github.io/'})
 	.then(function(reg) {
-		alert('s');
 	// registration worked
 	console.log('Registration succeeded. Scope is ' + reg.scope);
 	}).catch(function(error) {
-		alert('n');
 	// registration failed
 	console.log('Registration failed with ' + error);
 	});
