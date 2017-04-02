@@ -17,7 +17,7 @@ this.addEventListener('install', function(event) {
 
 this.addEventListener('fetch', function(event) {
   event.respondWith(
-    //caches.match(event.request)
-    new Response('teste');
+    //caches.match(event.request);
+    new Response('teste')
   );
 });
