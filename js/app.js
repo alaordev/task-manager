@@ -1,5 +1,5 @@
 // CHAMA O POPUP PARA ADICIONAR À HOMEPAGE NO MOBILE
-addToHomescreen();
+//addToHomescreen();
 
 /* IMPORTANTATE: PRECISA SER HTTPS PARA O SW OPERAR */
 /*if ('serviceWorker' in navigator) {
