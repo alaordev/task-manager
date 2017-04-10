@@ -1,3 +1,6 @@
+// CHAMA O POPUP PARA ADICIONAR À HOMEPAGE NO MOBILE
+addToHomescreen();
+
 /* IMPORTANTATE: PRECISA SER HTTPS PARA O SW OPERAR */
 if ('serviceWorker' in navigator) {
 	navigator.serviceWorker.register('/alaorweb.github.io/sw.js', {scope: '/alaorweb.github.io/'})
