@@ -6,10 +6,10 @@ if ('serviceWorker' in navigator) {
 	navigator.serviceWorker.register('/alaorweb.github.io/sw.js', {scope: '/alaorweb.github.io/'})
 	.then(function(reg) {
 	// registration worked
-	alert('Registration succeeded. Scope is ' + reg.scope);
+	console.log('Registration succeeded. Scope is ' + reg.scope);
 	}).catch(function(error) {
 	// registration failed
-	alert('Registration failed with ' + error);
+	console.log('Registration failed with ' + error);
 	});
 }
 
