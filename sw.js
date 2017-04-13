@@ -34,7 +34,7 @@ this.addEventListener('fetch', function(event) {
         
       });
     }).catch(function() {
-      //return caches.match('/sw-test/gallery/myLittleVader.jpg');
+      alert('fail');
     })
   );
 
