@@ -2,7 +2,7 @@
 //addToHomescreen();
 
 /* IMPORTANTATE: PRECISA SER HTTPS PARA O SW OPERAR */
-if ('serviceWorker' in navigator) {
+/*if ('serviceWorker' in navigator) {
 	navigator.serviceWorker.register('/alaorweb.github.io/sw.js', {scope: '/alaorweb.github.io/'})
 	.then(function(reg) {
 	// registration worked
@@ -11,12 +11,13 @@ if ('serviceWorker' in navigator) {
 	// registration failed
 	console.log('Registration failed with ' + error);
 	});
-}
+}*/
 
-/*navigator.serviceWorker.getRegistrations().then(function(registrations) {
+navigator.serviceWorker.getRegistrations().then(function(registrations) {
  for(let registration of registrations) {
+ 	alert('passou');
   registration.unregister()
-} })*/
+} })
 
 function getKeyPress(e){
 	e = e || window.event;
